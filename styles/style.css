@@ -1,0 +1,364 @@
+/* nav style start */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    padding: 1rem 3rem;
+    width: 100vw;
+    background-color: #292929;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li::marker {
+    content: '';
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > ul img {
+    height: 3rem;
+}
+
+nav > div img {
+    height: 3rem;
+}
+
+/*// nav style end */
+
+/* slide style start */
+article#slideshow {
+    margin-top: 80px;
+}
+
+/*// slide style end */
+
+/* content-container style start */
+.content-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.content-container > div:nth-child(1) {
+    flex: 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container > div:nth-child(2) {
+    flex: 1 300px;
+    padding-block: 6rem;
+}
+
+.content-container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content-container section {
+    width: 500px;
+    font-size: 15px;
+}
+
+.content-container p {
+    line-height: 2.5;
+    text-align: justify;
+    margin-block: 2rem;
+}
+/*// content-container style end */
+
+/* how-it-work style start */
+#how-it-work ul {
+    list-style-type: none;
+    line-height: 2.5;
+}
+
+#how-it-work li {
+    padding-left: 2rem;
+    background-position: 0 center;
+    background-size: 1.3rem 1.3rem;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+
+#how-it-work li:nth-child(1) {
+    background-image: url(../static/icons/starIcon.png);
+}
+
+#how-it-work li:nth-child(2) {
+    background-image: url(../static/icons/gif.png);
+}
+
+/*// how-it-work style end */
+
+/* vip-card style start */
+#vip-card > div:nth-child(2) {
+    padding: 5rem;
+}
+/*// vip-card style end */
+
+/* general style start */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+a.read-more {
+    color: black;
+    background-color: #fff;
+}
+
+a.read-more:focus {
+    border: 1px solid black;
+}
+
+a.read-more:hover {
+    color: white;
+    background-color: black;
+}
+
+a.read-more:active {
+    background-color: gray;
+}
+
+a.read-more-secondary:hover, a.read-more-secondary:focus {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+a.read-more-secondary:active {
+    background-color: gray;
+}
+
+a.read-more-secondary {
+    color: #fff;
+    background-color: black;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+}
+
+/*// general style end */
+
+/* articles style start */
+#articles {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.articles-content {
+    text-align: center;
+    margin: 3rem;
+}
+
+.article-container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container::after {
+    content: '';
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 50px; */
+    background-color: black;
+    color: white;
+    padding-block: 0;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.img-container:hover::after {
+    opacity: 1;
+    padding-block: 1rem;
+}
+
+.img-container:nth-child(1):after {
+    content: 'Colorful Air pot case';
+}
+.img-container:nth-child(2):after {
+    content: 'Nice phone back cover';
+}
+.img-container:nth-child(3):after {
+    content: 'Beautiful cartoon sticker';
+}
+.img-container:nth-child(4):after {
+    content: 'Samsung flig';
+}
+.img-container:nth-child(5):after {
+    content: 'Colorful Air pot case';
+}
+.img-container:nth-child(6):after {
+    content: 'Colorful Air pot case';
+}
+/*// articles style end */
+
+/* as-seen-in style start */
+
+#as-seen-in {
+    margin-block-start: 3rem;
+    height: 80vh;
+    background-image: url('../static/images/image15.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#as-seen-in .cart {
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.849);
+    position: absolute;
+    top: 25%;
+    left: 10vw;
+    width: 650px;
+}
+
+#as-seen-in p {
+    margin-block: 3rem;
+}
+
+.view-our-work {
+    color: white;
+    background-color: rgb(163, 162, 162);
+}
+
+.view-our-work:hover, .view-our-work:focus {
+    border: 1px solid rgb(163, 162, 162);
+    background-color: transparent;
+    color: black;
+}
+
+.view-our-work:active {
+    background-color: black;
+    color: white;
+}
+
+/* as-seen-in style end */ 
+
+footer {
+    background-color: #2E2B2B;
+    color: white;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    line-height: 2.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: underline;
+}
+
+footer .footer-content {
+    display: flex;
+}
+
+footer > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+footer > div:nth-child(2) > ul {
+    display: flex;
+}
+
+footer > div:nth-child(2) > ul > li {
+    margin-inline: 2rem;
+}
+
+footer > div:nth-child(2) > ul > li::marker {
+    content: '';
+}
+
+.footer-content > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content > div:nth-child(1) img {
+    height: 100px;
+}
+
+.footer-content > div:nth-child(1) {
+    align-items: flex-start;
+}
+
+.footer-content > div:nth-child(2), .footer-content > div:nth-child(1) {
+    flex-flow: column;
+}
+
+div.more-footer {
+    justify-content: space-around;
+}
+
+div.more-footer li::marker {
+    content: '';
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 160px;
+}
+
+.footer-content > div:nth-child(1) img {
+    height: 68px;
+    width: 109px;
+    object-fit: fill;
+    margin-block: 2rem;
+}
+
+.logo-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
