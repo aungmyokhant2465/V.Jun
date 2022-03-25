@@ -1,6 +1,5 @@
 .video-container {
     height: 80vh;
-    margin-top: 80px;
 }
 
 .video-container > img {
@@ -59,4 +58,16 @@ section p {
     right: -10%;
     width: 90%;
     height: 90%;
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        margin: 1rem 1rem;
+    }
+    section p {
+        width: auto;
+    }
+    .video-container {
+        height: auto;
+    }
 }

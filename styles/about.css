@@ -1,6 +1,5 @@
 .video-container {
     height: 80vh;
-    margin-top: 80px;
 }
 
 .video-container > img {
@@ -23,10 +22,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap row;
 }
 
 .about-slides > section > div {
-    flex: 1;
+    flex: 1 300px;
     margin: 3rem;
 }
 
@@ -43,4 +43,23 @@
 .about-slides > section p {
     line-height: 2;
     text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    #about-container > section {
+        margin: 1rem 1rem;
+        text-align: center;
+    }
+    section p {
+        width: auto;
+    }
+    .video-container {
+        height: auto;
+    }
+    .about-slides {
+        padding: 0;
+    }
+    .about-slides > section > div {
+        margin: 1rem;
+    }
 }

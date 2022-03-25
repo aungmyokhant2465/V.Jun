@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart 97</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/slider.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
 </head>
 <body>
     <header>
@@ -16,10 +20,10 @@
                 <li>
                     <img src="./static/images/vjun.png" alt="V.jun" >
                 </li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/download">Download</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="/download.html">Download</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/about.html">About</a></li>
             </ul>
             <div>
                 <a href="#"><img src="./static/images/appStoreLogo.png" alt="download on the App Store" ></a>
@@ -29,7 +33,7 @@
     </header>
     <main>
         <article id="slideshow">
-            <section class="slide-text">
+            <!-- <section class="slide-text">
                 <h1>CASE NATION <br> V.Jun </h1>
                 <p>
                     Convert your everyday device into a fashion accessory. BURGA phone cases are ultra-thi
@@ -56,10 +60,18 @@
                 <span class="dot"></span> 
                 <span class="dot"></span> 
                 <span class="dot"></span> 
-            </div>
+            </div> -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./static/images/image14.png"></div>
+                  <div class="swiper-slide"><img src="./static/images/image1.jpg"></div>
+                  <div class="swiper-slide"><img src="./static/images/image2.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </article>
         <article id="how-it-work" class="content-container">
-            <div>
+            <div data-aos="slide-up">
                 <section>
                     <h2>How it work</h2>
                     <p>
@@ -71,12 +83,12 @@
                     </ul>
                 </section>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <img src="./static/images/image4.png" alt="">
             </div>
         </article>
         <article id="vip-card" class="content-container">
-            <div>
+            <div data-aos="slide-up">
                 <section>
                     <h2>What is v.jun vip card ?</h2>
                     <p>
@@ -85,7 +97,7 @@
                     <a href="#" class="btn read-more-secondary" >LEARN MORE</a>
                 </section>
             </div>
-            <div>
+            <div data-aos="zoom-in">
                 <img src="./static/images/image16.png" alt="">
             </div>
         </article>
@@ -95,22 +107,22 @@
                 <p>Convert your everyday device into a fashion accessory. BURGAphone cases are ultra-thi</p>
             </div>
             <div class="article-container">
-                <div class="img-container">
+                <div class="img-container" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./static/images/image5.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img-container" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./static/images/image6.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img-container" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./static/images/image7.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img-container" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./static/images/image8.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img-container" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./static/images/image9.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img-container" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./static/images/image3.png" alt="">
                 </div>
             </div>
@@ -127,19 +139,6 @@
     </main>
     <footer>
         <div class="footer-content">
-            <div>
-                <img src="./static/images/vjun.png" alt="V.jun" >
-                <address>No (70) Kaing Dan Street, Lanmadaw Township, Yangon, Myanmar, 1113</address>
-                <a href="tel:+959 772 919268">Ph : +959 772 919268</a>
-            </div>
-            <div>
-                <h3>LET'S BE FRIENDS</h3>
-                <div class="logo-container">
-                    <img src="./static/icons/Facebook_white.png" alt="">
-                    <img src="./static/icons/Tumblr_white.png" alt="">
-                    <img src="./static/icons/Twitter_white.png" alt="">
-                </div>
-            </div>
             <div class="more-footer">
                 <article>
                     <h3>About Us</h3>
@@ -160,6 +159,19 @@
                     </ul>
                 </article>
             </div>
+            <div>
+                <img src="./static/images/vjun.png" alt="V.jun" >
+                <address>No (70) Kaing Dan Street, Lanmadaw Township, Yangon, Myanmar, 1113</address>
+                <a href="tel:+959 772 919268">Ph : +959 772 919268</a>
+            </div>
+            <div>
+                <h3>LET'S BE FRIENDS</h3>
+                <div class="logo-container">
+                    <img src="./static/icons/Facebook_white.png" alt="">
+                    <img src="./static/icons/Tumblr_white.png" alt="">
+                    <img src="./static/icons/Twitter_white.png" alt="">
+                </div>
+            </div>
         </div>
         <div>
             <ul>
@@ -169,6 +181,27 @@
             </ul>
         </div>
     </footer>
-    <script src="./javascripts/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="./javascripts/index.js"></script> -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+      });
+    </script>
 </body>
 </html>
