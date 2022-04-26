@@ -28,3 +28,14 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+var screenshot_swiper = new Swiper(".screenshot-swiper", {
+  pagination: {
+    el: ".screenshot-swiper-pagination",
+    dynamicBullets: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  },
+});
